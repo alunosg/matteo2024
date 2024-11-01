@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414735, b: 0.1210785, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -103,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 3
+    serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -116,12 +117,12 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    buildHeightMesh: 0
+    accuratePlacement: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 82dda6104de9555429e5d04761b249a6, type: 2}
 --- !u!1 &7427035
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,17 +152,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7427035}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 75285151}
@@ -242,7 +235,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365827
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &7427040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,13 +459,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7427035}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 392.1258, y: 2.912278, z: -281.53537}
   m_LocalScale: {x: 101.81646, y: 105.329124, z: 101.81646}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 149364903}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &28228178
 Mesh:
@@ -482,7 +474,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-46804(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -629,7 +621,6 @@ Mesh:
     m_Center: {x: -23.14087, y: 97.83719, z: -33.170334}
     m_Extent: {x: 23.14087, y: 97.83719, z: 33.170334}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -647,7 +638,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-43514(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -794,7 +785,6 @@ Mesh:
     m_Center: {x: 59.031494, y: 115.69975, z: -32.12332}
     m_Extent: {x: 59.031494, y: 115.69975, z: 32.12332}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -834,17 +824,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62017621}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1700549099}
@@ -925,7 +907,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365831
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &62017626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1150,13 +1131,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62017621}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 32.26269, y: 6.5243783, z: 115.82361}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 0.9040774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &75285151
 Mesh:
@@ -1165,7 +1146,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-11946(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -1312,7 +1293,6 @@ Mesh:
     m_Center: {x: -4.478194, y: 0.008914125, z: 3.339631}
     m_Extent: {x: 4.478194, y: 0.008914125, z: 3.339631}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -1328,7 +1308,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 149364903}
     m_Modifications:
     - target: {fileID: -9089570630500357496, guid: 87354dbe144aabb4d919fb07d0d2fa17, type: 3}
@@ -1536,9 +1515,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87354dbe144aabb4d919fb07d0d2fa17, type: 3}
 --- !u!4 &99288413 stripped
 Transform:
@@ -1574,17 +1550,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101902692}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2034430136}
@@ -1665,7 +1633,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365845
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &101902697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1890,20 +1857,19 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101902692}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 669.79285, y: 5.4861, z: -116.2552}
   m_LocalScale: {x: 0.9040774, y: 0.9136606, z: 1.1154687}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &110899334
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -1975,9 +1941,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &110899335 stripped
 Transform:
@@ -1989,7 +1952,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -2061,9 +2023,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &119417415 stripped
 Transform:
@@ -2099,17 +2058,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120627401}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2018784424}
@@ -2190,7 +2141,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365848
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &120627406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2415,13 +2365,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120627401}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 679.6413, y: 6.5243506, z: 108.13238}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 0.9040774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &122986825
 GameObject:
@@ -2452,17 +2402,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122986825}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 451366207}
@@ -2543,7 +2485,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365837
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &122986830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2768,13 +2709,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122986825}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 102.23306, y: 6.5243855, z: -310.55328}
   m_LocalScale: {x: 1.994214, y: 0.9040774, z: 0.9040774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &149364902
 GameObject:
@@ -2800,19 +2741,19 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149364902}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 60.904205, y: -3.842288, z: -52.164642}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7427041}
-  - {fileID: 684931240}
-  - {fileID: 1968116408}
   - {fileID: 99288413}
+  - {fileID: 684931240}
   - {fileID: 1407388084}
+  - {fileID: 1968116408}
   - {fileID: 1702695314}
   m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &149364904
 MonoBehaviour:
@@ -2831,11 +2772,9 @@ MonoBehaviour:
   m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
-    serializedVersion: 2
     m_Bits: 4294967295
   m_UseGeometry: 0
   m_DefaultArea: 0
-  m_GenerateLinks: 0
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
   m_OverrideTileSize: 0
@@ -2845,6 +2784,8 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 1371001a7209b904d9a23971412a262b, type: 2}
   m_BuildHeightMesh: 0
+  m_LastPosition: {x: 60.904205, y: -3.842288, z: -52.164642}
+  m_LastRotation: {x: 0, y: 0, z: 0, w: 1}
 --- !u!43 &155700161
 Mesh:
   m_ObjectHideFlags: 0
@@ -2852,7 +2793,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-56980(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -2999,7 +2940,6 @@ Mesh:
     m_Center: {x: 38.459045, y: 165.26877, z: 47.272446}
     m_Extent: {x: 38.459045, y: 165.26877, z: 47.272453}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -3015,7 +2955,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 2011345706}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0778dcc68c6f6b84e922678d41c1e922, type: 3}
@@ -3079,9 +3018,6 @@ PrefabInstance:
       value: Alienbug
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0778dcc68c6f6b84e922678d41c1e922, type: 3}
 --- !u!4 &188001123 stripped
 Transform:
@@ -3117,17 +3053,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201187212}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 797997330}
@@ -3208,7 +3136,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365853
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &201187217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3433,13 +3360,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201187212}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 323.28, y: 6.524406, z: 233.28658}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 0.9040774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &238364303
 Mesh:
@@ -3448,7 +3375,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-50154(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -3595,7 +3522,6 @@ Mesh:
     m_Center: {x: -19.471954, y: 106.809395, z: -68.66867}
     m_Extent: {x: 19.471954, y: 106.809395, z: 68.66867}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -3655,17 +3581,9 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281245681}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Radius: 1.8
   m_Center: {x: 0, y: 1.46, z: 0}
 --- !u!4 &281245684
@@ -3675,7 +3593,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281245681}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 203.4842, y: 2.39, z: 164.32}
   m_LocalScale: {x: 2.6882, y: 2.6882, z: 2.6882}
@@ -3683,6 +3600,7 @@ Transform:
   m_Children:
   - {fileID: 1809911292}
   m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &281245685
 MonoBehaviour:
@@ -3734,17 +3652,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304914355}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1885886688}
@@ -3825,7 +3735,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365847
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &304914360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4050,13 +3959,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304914355}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 677.5663, y: 7.784467, z: 56.167618}
   m_LocalScale: {x: 0.9040774, y: 0.89893085, z: 1.302617}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &318216697
 Mesh:
@@ -4065,7 +3974,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-51142(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -4212,7 +4121,6 @@ Mesh:
     m_Center: {x: 40.212814, y: 125.391815, z: 52.85608}
     m_Extent: {x: 40.212822, y: 125.391815, z: 52.85608}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -4230,7 +4138,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-49522(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -4377,7 +4285,6 @@ Mesh:
     m_Center: {x: 21.252213, y: 78.536285, z: -28.56311}
     m_Extent: {x: 21.252205, y: 78.536285, z: 28.56311}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -4393,7 +4300,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -4465,9 +4371,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &359149036 stripped
 Transform:
@@ -4503,17 +4406,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384503884}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1947636233}
@@ -4594,7 +4489,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365849
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &384503889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4819,20 +4713,19 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384503884}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 688.5272, y: 218.46922, z: 216.88547}
   m_LocalScale: {x: 0.5351951, y: 66.36243, z: 0.9679957}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &418298022
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -4904,9 +4797,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &418298023 stripped
 Transform:
@@ -4920,7 +4810,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-48344(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -5067,7 +4957,6 @@ Mesh:
     m_Center: {x: -57.524597, y: 127.341, z: -35.122925}
     m_Extent: {x: 57.524597, y: 127.341, z: 35.122925}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -5083,7 +4972,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: feb6bf327ec05a64a939b17c636a1153, type: 3}
@@ -5131,9 +5019,6 @@ PrefabInstance:
       value: M1Garand
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feb6bf327ec05a64a939b17c636a1153, type: 3}
 --- !u!43 &477830250
 Mesh:
@@ -5142,7 +5027,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-47884(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -5289,7 +5174,6 @@ Mesh:
     m_Center: {x: -40.32379, y: 121.58557, z: -50.929703}
     m_Extent: {x: 40.32379, y: 121.58557, z: 50.92971}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -5305,7 +5189,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -5377,9 +5260,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &488439112 stripped
 Transform:
@@ -5412,16 +5292,7 @@ TerrainCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512797939}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
   m_TerrainData: {fileID: 15600000, guid: f6c74a5ebddfa124e8bbb2fb995d5903, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &512797941
@@ -5442,28 +5313,22 @@ Terrain:
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
-  m_HeightmapMinimumLODSimplification: 0
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
   m_DrawInstanced: 0
   m_DrawTreesAndFoliage: 1
   m_StaticShadowCaster: 0
-  m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
   m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
-  m_ReceiveGI: 1
   m_ScaleInLightmap: 0.0256
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
-  m_EnableHeightmapRayTracing: 1
-  m_EnableTreesAndDetailsRayTracing: 0
-  m_TreeMotionVectorModeOverride: 3
 --- !u!4 &512797942
 Transform:
   m_ObjectHideFlags: 0
@@ -5471,13 +5336,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512797939}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &535903932
 GameObject:
@@ -5507,17 +5372,9 @@ CharacterController:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535903932}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Height: 2
   m_Radius: 0.5000001
   m_SlopeLimit: 45
@@ -5582,7 +5439,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535903932}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9833274, z: -0, w: 0.18184403}
   m_LocalPosition: {x: 192.89, y: 2.01, z: 167.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -5591,6 +5447,7 @@ Transform:
   - {fileID: 963194228}
   - {fileID: 1146287066}
   m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 159.046, z: 0}
 --- !u!114 &535903938
 MonoBehaviour:
@@ -5604,19 +5461,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b422f0964be4c54aa12747a43117b6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 3
-  stunDuration: 0.2
-  deathDuration: 5
-  hitParticle: {fileID: 4021103657954561961, guid: 5c755f9bc5253ea418e919994537dcc7, type: 3}
-  controller: {fileID: 535903933}
-  speed: 5
-  gravity: -9.81
-  chaveUm: 0
-  GroundCheck: {fileID: 1146287066}
-  groundDistance: 0.4
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!43 &543849036
 Mesh:
   m_ObjectHideFlags: 0
@@ -5624,7 +5468,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-52050(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -5771,7 +5615,6 @@ Mesh:
     m_Center: {x: -26.833221, y: 97.96886, z: 99.19261}
     m_Extent: {x: 26.833221, y: 97.96886, z: 99.19261}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -5789,7 +5632,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-45368(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -5936,7 +5779,6 @@ Mesh:
     m_Center: {x: -68.083435, y: 102.48998, z: 30.91204}
     m_Extent: {x: 68.083435, y: 102.48998, z: 30.912037}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -5952,7 +5794,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -6024,9 +5865,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &568500574 stripped
 Transform:
@@ -6038,7 +5876,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -6110,9 +5947,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &579851204 stripped
 Transform:
@@ -6148,17 +5982,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621328919}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1555769822}
@@ -6239,7 +6065,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365833
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &621328924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6464,13 +6289,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621328919}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -56.4, y: 5.14, z: -4}
   m_LocalScale: {x: 1, y: 0.9622, z: 1.1688}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &637696716
 Mesh:
@@ -6479,7 +6304,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-51506(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -6626,7 +6451,6 @@ Mesh:
     m_Center: {x: 116.865524, y: 152.59708, z: -47.75569}
     m_Extent: {x: 116.865524, y: 152.59708, z: 47.755684}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -6642,7 +6466,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 149364903}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5ef6bca2b2050444c8df8a0d6845ecfd, type: 3}
@@ -6782,10 +6605,6 @@ PrefabInstance:
       value: 58
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: -5902971270548390587, guid: 5ef6bca2b2050444c8df8a0d6845ecfd, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ef6bca2b2050444c8df8a0d6845ecfd, type: 3}
 --- !u!4 &684931240 stripped
 Transform:
@@ -6821,17 +6640,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706456374}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 964995931}
@@ -6912,7 +6723,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365846
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &706456379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7137,13 +6947,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706456374}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 671.7681, y: 6.5243855, z: -17.534578}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 1.2926316}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &729966803
 GameObject:
@@ -7174,17 +6984,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729966803}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 238364303}
@@ -7265,7 +7067,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365841
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &729966808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7490,13 +7291,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729966803}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.71010125, z: -0, w: 0.70409966}
   m_LocalPosition: {x: 306.37372, y: 6.5243783, z: -326.46506}
   m_LocalScale: {x: 0.90407735, y: 0.9040774, z: 0.90407735}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -90.486, z: 0}
 --- !u!43 &797997330
 Mesh:
@@ -7505,7 +7306,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-56460(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -7652,7 +7453,6 @@ Mesh:
     m_Center: {x: -107.74809, y: 176.39116, z: -30.96576}
     m_Extent: {x: 107.74809, y: 176.39116, z: 30.965752}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -7668,7 +7468,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -7740,9 +7539,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &800953781 stripped
 Transform:
@@ -7754,7 +7550,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -7826,9 +7621,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &868388139 stripped
 Transform:
@@ -7842,7 +7634,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-47246(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -7989,7 +7781,6 @@ Mesh:
     m_Center: {x: 8.832428, y: 93.946594, z: -34.922363}
     m_Extent: {x: 8.832428, y: 93.946594, z: 34.922363}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -8029,17 +7820,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934084608}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 477830250}
@@ -8120,7 +7903,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365836
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &934084613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8345,20 +8127,19 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934084608}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -45.61637, y: 6.5243783, z: -247.72949}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 0.9040774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &959503551
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -8430,9 +8211,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &959503552 stripped
 Transform:
@@ -8480,17 +8258,9 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -8524,13 +8294,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.34, y: 0.97300005, z: 0.011001587}
   m_LocalScale: {x: 6.3829, y: 6.3829, z: 6.3829}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 535903937}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -8553,7 +8323,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-53574(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -8700,7 +8470,6 @@ Mesh:
     m_Center: {x: 21.748047, y: 79.38231, z: 29.289467}
     m_Extent: {x: 21.748062, y: 79.38231, z: 29.289467}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -8740,17 +8509,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981499508}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 888169023}
@@ -8831,7 +8592,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365835
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &981499513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9056,13 +8816,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981499508}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -79.57964, y: 6.5243783, z: -166.17215}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 1.3402044}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1036064086
 Mesh:
@@ -9071,7 +8831,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-49118(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -9218,7 +8978,6 @@ Mesh:
     m_Center: {x: 30.394913, y: 188.68283, z: -28.717682}
     m_Extent: {x: 30.394905, y: 188.68283, z: 28.717667}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -9234,7 +8993,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -9306,9 +9064,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &1063439693 stripped
 Transform:
@@ -9344,17 +9099,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065919850}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1620885697}
@@ -9435,7 +9182,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365840
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &1065919855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9660,13 +9406,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065919850}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 212.5938, y: 6.0291114, z: -308.3383}
   m_LocalScale: {x: 1.6047611, y: 1.1357924, z: 1.1357924}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1146287065
 GameObject:
@@ -9691,13 +9437,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146287065}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 535903937}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1212632580
 GameObject:
@@ -9728,17 +9474,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212632580}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 637696716}
@@ -9819,7 +9557,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365843
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &1212632585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10044,20 +9781,19 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212632580}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 648.6541, y: 0, z: -543.7162}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1881755236}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1226856715
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -10129,9 +9865,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &1226856716 stripped
 Transform:
@@ -10143,7 +9876,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -10215,9 +9947,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &1238932733 stripped
 Transform:
@@ -10229,7 +9958,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -10301,9 +10029,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &1287504816 stripped
 Transform:
@@ -10317,7 +10042,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-43984(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -10464,7 +10189,6 @@ Mesh:
     m_Center: {x: 41.187897, y: 63.686455, z: -26.454254}
     m_Extent: {x: 41.187897, y: 63.686455, z: 26.454247}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -10480,7 +10204,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 149364903}
     m_Modifications:
     - target: {fileID: -9089570630500357496, guid: 87354dbe144aabb4d919fb07d0d2fa17, type: 3}
@@ -10688,9 +10411,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87354dbe144aabb4d919fb07d0d2fa17, type: 3}
 --- !u!4 &1407388084 stripped
 Transform:
@@ -10726,17 +10446,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451505085}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1384785637}
@@ -10817,7 +10529,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365830
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &1451505090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11042,13 +10753,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451505085}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -32.29944, y: 6.5243783, z: 110.74677}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 0.9040774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1462067786 stripped
 GameObject:
@@ -11062,7 +10773,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-55396(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -11209,7 +10920,6 @@ Mesh:
     m_Center: {x: -47.49121, y: 127.0388, z: 20.088226}
     m_Extent: {x: 47.491203, y: 127.03879, z: 20.088226}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -11249,17 +10959,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519430774}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1491216622}
@@ -11340,7 +11042,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365850
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &1519430779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11565,13 +11266,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519430774}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 563.855, y: 6.5244336, z: 209.71799}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 0.9040774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1555769822
 Mesh:
@@ -11580,7 +11281,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-46438(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -11727,7 +11428,6 @@ Mesh:
     m_Center: {x: -49.83896, y: 68.040634, z: -49.971706}
     m_Extent: {x: 49.838943, y: 68.040634, z: 49.971706}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -11767,17 +11467,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586490406}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1036064086}
@@ -11858,7 +11550,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365838
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &1586490411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12083,13 +11774,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586490406}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 100.29257, y: 6.5243783, z: -309.71155}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 0.9040774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1620885697
 Mesh:
@@ -12098,7 +11789,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-49814(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -12245,7 +11936,6 @@ Mesh:
     m_Center: {x: 37.165367, y: 74.43326, z: -20.859497}
     m_Extent: {x: 37.165367, y: 74.43326, z: 20.859497}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -12261,7 +11951,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: feb6bf327ec05a64a939b17c636a1153, type: 3}
@@ -12317,9 +12006,6 @@ PrefabInstance:
       value: 0.9161922
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feb6bf327ec05a64a939b17c636a1153, type: 3}
 --- !u!1 &1645621422
 GameObject:
@@ -12350,17 +12036,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645621422}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 28228178}
@@ -12441,7 +12119,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365834
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &1645621427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12666,13 +12343,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645621422}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -49.730602, y: 6.5243716, z: -95.20206}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 1.1398607}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1700549099
 Mesh:
@@ -12681,7 +12358,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-44662(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -12828,7 +12505,6 @@ Mesh:
     m_Center: {x: -53.44687, y: 38.89161, z: 28.473618}
     m_Extent: {x: 53.44687, y: 38.89161, z: 28.473618}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -12862,7 +12538,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702695313}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -412.4842, y: -2.4265118, z: 110.66764}
   m_LocalScale: {x: 1.1061, y: 1.1061, z: 1.1061}
@@ -12892,24 +12567,25 @@ Transform:
   - {fileID: 2135586348}
   - {fileID: 201187218}
   - {fileID: 1712122270}
-  - {fileID: 959503552}
-  - {fileID: 2061760099}
+  - {fileID: 110899335}
+  - {fileID: 119417415}
+  - {fileID: 359149036}
+  - {fileID: 418298023}
   - {fileID: 488439112}
+  - {fileID: 568500574}
   - {fileID: 579851204}
   - {fileID: 800953781}
-  - {fileID: 110899335}
-  - {fileID: 1809489620}
-  - {fileID: 1238932733}
-  - {fileID: 1063439693}
-  - {fileID: 418298023}
-  - {fileID: 1287504816}
-  - {fileID: 119417415}
   - {fileID: 868388139}
-  - {fileID: 359149036}
+  - {fileID: 959503552}
+  - {fileID: 1063439693}
   - {fileID: 1226856716}
-  - {fileID: 568500574}
+  - {fileID: 1238932733}
+  - {fileID: 1287504816}
+  - {fileID: 1809489620}
+  - {fileID: 2061760099}
   - {fileID: 621328925}
   m_Father: {fileID: 149364903}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1712122264
 GameObject:
@@ -12940,17 +12616,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712122264}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 155700161}
@@ -13031,7 +12699,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365854
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &1712122269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13256,13 +12923,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712122264}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 26.923424, y: 6.5243783, z: 163.88826}
   m_LocalScale: {x: 1.3854986, y: 0.9040774, z: 0.9040774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1736916068
 GameObject:
@@ -13293,17 +12960,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736916068}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 332889732}
@@ -13384,7 +13043,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365839
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &1736916073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13609,13 +13267,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736916068}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 157.30945, y: 6.5243783, z: -296.02533}
   m_LocalScale: {x: 1.9130278, y: 0.9040774, z: 0.9040774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1755897402
 GameObject:
@@ -13646,17 +13304,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755897402}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 543849036}
@@ -13737,7 +13387,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365844
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &1755897407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13962,13 +13611,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755897402}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 714.87494, y: 6.5243783, z: -280.80045}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 0.9040774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1782373973
 Mesh:
@@ -13977,7 +13626,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-56020(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -14124,7 +13773,6 @@ Mesh:
     m_Center: {x: -46.507034, y: 156.09656, z: -30.906403}
     m_Extent: {x: 46.507034, y: 156.09656, z: 30.906418}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -14140,7 +13788,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -14212,9 +13859,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &1809489620 stripped
 Transform:
@@ -14226,7 +13870,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 281245684}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: fd4ca33c78075924eb5698eed387bbc3, type: 3}
@@ -14290,9 +13933,6 @@ PrefabInstance:
       value: CYBER WOLF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd4ca33c78075924eb5698eed387bbc3, type: 3}
 --- !u!4 &1809911292 stripped
 Transform:
@@ -14328,17 +13968,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868911812}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 553685485}
@@ -14419,7 +14051,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365832
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &1868911817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14644,13 +14275,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868911812}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -12.253466, y: 4.763403, z: 2.5639656}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 1.0111202}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1875705621
 Mesh:
@@ -14659,7 +14290,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-55598(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -14806,7 +14437,6 @@ Mesh:
     m_Center: {x: -113.2296, y: 137.38475, z: -27.863129}
     m_Extent: {x: 113.2296, y: 137.38472, z: 27.863113}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -14846,17 +14476,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881755230}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 52959256}
@@ -14937,7 +14559,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365829
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &1881755235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15162,7 +14783,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881755230}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -76.64239, y: 6.524392, z: 208.0053}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 0.9040774}
@@ -15170,6 +14790,7 @@ Transform:
   m_Children:
   - {fileID: 1212632586}
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1885886688
 Mesh:
@@ -15178,7 +14799,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-54060(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -15325,7 +14946,6 @@ Mesh:
     m_Center: {x: 26.594788, y: 123.03922, z: 20.133423}
     m_Extent: {x: 26.594803, y: 123.03922, z: 20.133423}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -15365,17 +14985,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905830152}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1875705621}
@@ -15456,7 +15068,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365851
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &1905830157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15681,13 +15292,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905830152}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 480.047, y: 6.5243783, z: 240.83733}
   m_LocalScale: {x: 0.36038643, y: 1.0399603, z: 1.0399603}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1947636233
 Mesh:
@@ -15696,7 +15307,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-54436(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -15843,7 +15454,6 @@ Mesh:
     m_Center: {x: -114.714355, y: -3.2378228, z: 13.251007}
     m_Extent: {x: 114.71434, y: 3.2378075, z: 13.250992}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -15859,7 +15469,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 149364903}
     m_Modifications:
     - target: {fileID: -8787627330624228112, guid: b4746afa75ec82a4ab0eb9b1e06fa5fd, type: 3}
@@ -15947,15 +15556,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b4746afa75ec82a4ab0eb9b1e06fa5fd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1968116411}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b4746afa75ec82a4ab0eb9b1e06fa5fd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1968116414}
   m_SourcePrefab: {fileID: 100100000, guid: b4746afa75ec82a4ab0eb9b1e06fa5fd, type: 3}
 --- !u!4 &1968116408 stripped
 Transform:
@@ -15970,18 +15570,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462067786}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 1
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.25, y: 0.15, z: 0.2}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.0037092268, y: 0, z: -0.005234648}
 --- !u!114 &1968116414
 MonoBehaviour:
@@ -16045,17 +15637,9 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011345703}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2011345706
@@ -16065,7 +15649,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011345703}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 203.4842, y: 2.39, z: 153.56094}
   m_LocalScale: {x: 2.6882, y: 2.6882, z: 2.6882}
@@ -16073,6 +15656,7 @@ Transform:
   m_Children:
   - {fileID: 188001123}
   m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2011345707
 MonoBehaviour:
@@ -16102,7 +15686,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-54236(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -16249,7 +15833,6 @@ Mesh:
     m_Center: {x: 24.99234, y: 154.068, z: 61.119644}
     m_Extent: {x: 24.99234, y: 154.068, z: 61.119644}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -16267,7 +15850,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-52592(Clone)
-  serializedVersion: 11
+  serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -16414,7 +15997,6 @@ Mesh:
     m_Center: {x: 20.587982, y: 53.991062, z: 47.00484}
     m_Extent: {x: 20.587982, y: 53.991062, z: 47.00484}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -16430,7 +16012,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1702695314}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
@@ -16502,9 +16083,6 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f236f252f665d8f409f2c0627fde0467, type: 3}
 --- !u!4 &2061760099 stripped
 Transform:
@@ -16540,17 +16118,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126742340}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 318216697}
@@ -16631,7 +16201,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365842
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &2126742345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16856,13 +16425,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126742340}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 433.99875, y: 5.6674733, z: -372.38803}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 0.9040774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2135586342
 GameObject:
@@ -16893,17 +16462,9 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135586342}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1782373973}
@@ -16984,7 +16545,6 @@ MonoBehaviour:
     RefIds:
     - rid: 7620203098956365852
       type: {class: Cube, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
-      data: 
 --- !u!114 &2135586347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17209,22 +16769,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135586342}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 404.3757, y: 6.5243783, z: 231.86752}
   m_LocalScale: {x: 0.9040774, y: 0.9040774, z: 0.9040774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702695314}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1660057539 &9223372036854775807
-SceneRoots:
-  m_ObjectHideFlags: 0
-  m_Roots:
-  - {fileID: 535903937}
-  - {fileID: 149364903}
-  - {fileID: 2011345706}
-  - {fileID: 281245684}
-  - {fileID: 457177781}
-  - {fileID: 1625471235}
-  - {fileID: 512797942}
