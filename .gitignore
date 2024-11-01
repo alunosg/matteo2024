@@ -1,0 +1,10 @@
+﻿matteo level3/.vs
+matteo level3/UserSettings
+*.sln
+*.csproj
+*.vsconfig
+matteo level3/Temp
+matteo level3/.vscode
+matteo level3/Logs
+matteo level3/obj
+matteo level3/Library
